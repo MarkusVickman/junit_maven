@@ -12,7 +12,7 @@ jobs:
 
       - name: Set up JDK
         uses: actions/setup-java@v3
-        wíth:
+        with:
           java-version: '21'
           distribution: 'temurin'
 
