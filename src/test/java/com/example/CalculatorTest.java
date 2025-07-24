@@ -15,9 +15,13 @@ public class CalculatorTest {
     }
 
     @Test
+    public void testAddZero() {
+        assertEquals(2, calc.add(2,0));
+    }
+
+    @Test
     public void testDivide() {
         assertEquals(2, calc.divide(10, 5));
-
     }
 
     @Test
@@ -25,4 +29,15 @@ public class CalculatorTest {
         assertThrows(ArithmeticException.class, () -> calc.divide(10, 0));
 
     }
+
+    @Test
+    public void testMultiply(){
+        arrertEquals(6, calc.multiply(2,3));
+    }
+
+    @Test
+    public void testMultiplyByZero(){
+        arrertEquals(0, calc.multiply(0,3));
+    }
+
 }
