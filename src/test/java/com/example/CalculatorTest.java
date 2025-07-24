@@ -32,12 +32,12 @@ public class CalculatorTest {
 
     @Test
     public void testMultiply(){
-        arrertEquals(6, calc.multiply(2,3));
+        assertEquals(6, calc.multiply(2,3));
     }
 
     @Test
     public void testMultiplyByZero(){
-        arrertEquals(0, calc.multiply(0,3));
+        assertEquals(0, calc.multiply(0,3));
     }
 
 }
